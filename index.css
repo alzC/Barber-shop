@@ -1,0 +1,343 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #fff;
+	font-family: "Roboto";
+	overflow-x: hidden;
+}
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	z-index: 100000;
+}
+header .navbar {
+	padding: 15px;
+	width: 100%;
+	display: flex;
+}
+header .navbar .navbar-brand {
+	text-transform: uppercase;
+	font-size: 8px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+header .navbar .navbar-collapse {
+	width: 100%;
+}
+header .navbar .navbar-collapse ul {
+	font-size: 8px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+}
+
+header .navbar .navbar-collapse ul li {
+	padding: 10px;
+	list-style: none;
+}
+header .navbar .navbar-collapse ul li a {
+	color: white;
+	text-decoration: none;
+}
+.hero-section {
+	background: url(./images/banner-1.webp);
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	min-height: 650px;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+}
+.hero-section:before {
+	content: "";
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.hero-section img {
+	z-index: 100000000;
+}
+.banner-adress {
+	margin-top: -50px;
+
+	display: flex;
+	justify-content: center;
+	background: black;
+	width: 60%;
+	color: white;
+	z-index: 500000000;
+}
+.banner-adress ul {
+	z-index: 500000000;
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+}
+@media (max-width: 412px) {
+	.banner-adress {
+		width: 100%;
+	}
+	.banner-adress ul {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+}
+.banner-adress ul li {
+	padding: 25px;
+	list-style: none;
+}
+.banner-adress ul li h5 {
+	padding: 5px;
+}
+.banner-adress ul li p {
+	font-size: 12px;
+	color: lightgray;
+	padding: 10px 0 0 30px;
+}
+.banner-adress ul li:nth-child(1) h5 i {
+	margin: 5px;
+	background: url(./images/phone.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 0 8px 0 8px;
+}
+.banner-adress ul li:nth-child(2) h5 i {
+	margin: 5px;
+	background: url(./images/map.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 0 8px 0 8px;
+}
+.banner-adress ul li:nth-child(3) h5 i {
+	margin: 5px;
+	background: url(./images/clock.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 0 8px 0 8px;
+}
+.services {
+	padding: 50px;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.service-desc {
+	width: 350px;
+	text-align: left;
+}
+@media (max-width: 412px) {
+	.services {
+		padding: 50px;
+		height: 80vh;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.service-desc {
+		width: 350px;
+		text-align: center;
+	}
+}
+.service-desc h5 {
+	font-weight: 500;
+	font-size: 20px;
+	padding: 8px 0;
+}
+.service-desc p {
+	font-size: 12px;
+	color: lightgray;
+	padding-bottom: 8px;
+}
+.service-desc button {
+	margin: 8px 0;
+	padding: 5px;
+	background-color: #ff8f57;
+	color: white;
+	border: none;
+}
+.service-img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.service-img .img-item {
+	position: relative;
+	margin: 5px;
+}
+.service-img .img-item img {
+	position: relative;
+
+	height: 100%;
+}
+.service-img .img-item:before {
+	content: "";
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.service-img .img-item:hover:before {
+	background: rgba(0, 0, 0, 0.5);
+	transition: 0.5s ease;
+}
+.service-img .img-item .img-content {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 25;
+}
+.service-img .img-item .img-content a {
+	color: white;
+	text-decoration: none;
+}
+.features {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 90px;
+}
+.feature-title {
+	padding: 0px 70px 15px 70px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media (max-width: 412px) {
+	.feature-title {
+		padding: 0px 20px 15px 20px;
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.feature-title h3 {
+		padding: 0px 0px 15px 0px;
+	}
+}
+.features-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.features-container .feature-item {
+	margin: 5px;
+	border: solid 1px;
+	padding: 30px;
+	font-size: 10px;
+	width: 220px;
+}
+.bg-parralax {
+	display: flex;
+	color: white;
+	height: 50vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(./images/parrallax-2.webp);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 0px -100px;
+	object-fit: cover;
+	background-size: cover;
+}
+
+.style {
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+.style-content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 800px;
+}
+.style .style-text {
+	text-align: center;
+	width: 400px;
+	padding: 25px;
+}
+body .contact {
+	padding: 25px;
+	display: flex;
+	justify-content: center;
+}
+body .contact label {
+	color: lightgray;
+	font-size: 12px;
+	padding: 3px;
+}
+.contact .row-label {
+	display: flex;
+}
+@media (max-width: 412px) {
+	.contact .row-label {
+		flex-direction: column;
+	}
+}
+.contact .row-label div {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+.contact .message-content {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.contact .btn-content {
+	padding: 5px;
+	display: flex;
+}
+.contact .btn-content input {
+	padding: 10px;
+	background: #ff8f57;
+	border: none;
+	color: white;
+	font-size: 9px;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	height: 7em;
+	background: lightgray;
+	align-items: center;
+}
+footer a {
+	color: black;
+	text-decoration: none;
+}
