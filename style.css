@@ -31,6 +31,7 @@ header .navbar .navbar-brand {
 	justify-content: center;
 }
 header .navbar .navbar-collapse {
+	display: none;
 	width: 100%;
 }
 header .navbar .navbar-collapse ul {
@@ -73,6 +74,13 @@ header .navbar .navbar-collapse ul li a {
 }
 .hero-section img {
 	z-index: 100000000;
+}
+@media (max-width: 412px) {
+	.hero-section img {
+		width: 100%;
+		padding: 15px;
+		height: 200px;
+	}
 }
 .banner-adress {
 	margin-top: -50px;
@@ -263,6 +271,18 @@ header .navbar .navbar-collapse ul li a {
 	font-size: 15px;
 	width: 300px;
 }
+@media (max-width: 412px) {
+	.features-container {
+		margin-top: 25px;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.features-container .feature-item {
+		padding: 15px;
+	}
+}
 .bg-parralax {
 	display: flex;
 	color: white;
@@ -288,6 +308,9 @@ header .navbar .navbar-collapse ul li a {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 900px;
+}
+.style-content img {
+	width: 100%;
 }
 .style .style-text {
 	font-size: 18px;
