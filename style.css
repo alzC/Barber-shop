@@ -318,6 +318,13 @@ header .navbar .navbar-collapse ul li a {
 	width: 900px;
 }
 @media (max-width: 412px) {
+	.style {
+		padding: 0px;
+	}
+	.style-content {
+		width: 100%;
+		position: relative;
+	}
 	.style-content img {
 		width: 100%;
 	}
@@ -334,17 +341,25 @@ header .navbar .navbar-collapse ul li a {
 body .contact {
 	padding: 25px;
 	display: flex;
+
 	justify-content: center;
 }
 body .contact label {
-	color: lightgray;
-	font-size: 12px;
+	color: rgba(0, 0, 0, 0.534);
+	font-size: 28px;
 	padding: 3px;
+}
+body .contact form {
+	width: 60%;
 }
 .contact .row-label {
 	display: flex;
+	justify-content: space-between;
 }
 @media (max-width: 412px) {
+	body .contact form {
+		width: 100%;
+	}
 	.contact .row-label {
 		flex-direction: column;
 	}
@@ -368,7 +383,7 @@ body .contact label {
 	background: #ff8f57;
 	border: none;
 	color: white;
-	font-size: 9px;
+	font-size: 19px;
 }
 
 footer {
