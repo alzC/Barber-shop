@@ -167,13 +167,24 @@
 
     <script>
         imgStyle = document.querySelector('.bg-parralax');
-       
-        window.addEventListener('scroll', function(){
-            let value = window.scrollY /3.5 ;
-            console.log(value / 22)
-            imgStyle.style.backgroundPosition = '0px ' +(500  - value) + 'px';
-             
-        })
+       if(window.innerWidth < 426 ){
+           window.addEventListener('scroll', function () {
+
+               let value = window.scrollY / 3.5;
+               console.log(value / 22)
+               imgStyle.style.backgroundPosition = '0px ' + (1100 - value) + 'px';
+               imgStyle.style.backgroundSize = '100% 90%';
+           })
+       } else {
+           window.addEventListener('scroll', function () {
+
+               let value = window.scrollY / 3.5;
+               console.log(value / 22)
+               imgStyle.style.backgroundPosition = '0px ' + (500 - value) + 'px';
+
+           })
+       }
+        
        
     </script>
 </body>

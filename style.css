@@ -158,7 +158,8 @@ header .navbar .navbar-collapse ul li a {
 @media (max-width: 412px) {
 	.services {
 		padding: 50px;
-		height: 80vh;
+		height: fit-content;
+
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
@@ -246,8 +247,11 @@ header .navbar .navbar-collapse ul li a {
 	align-items: center;
 }
 @media (max-width: 412px) {
+	.features {
+		padding: 50px;
+	}
 	.feature-title {
-		padding: 0px 20px 15px 20px;
+		padding: 0px;
 		display: flex;
 		text-align: center;
 		flex-direction: column;
@@ -294,10 +298,14 @@ header .navbar .navbar-collapse ul li a {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 0px -100px;
-	object-fit: cover;
+	object-fit: contain;
 	background-size: cover;
 }
-
+@media (max-width: 412px) {
+	.bg-parralax {
+		background-position: 0px 800px;
+	}
+}
 .style {
 	display: flex;
 	justify-content: center;
@@ -309,8 +317,10 @@ header .navbar .navbar-collapse ul li a {
 	flex-wrap: wrap;
 	width: 900px;
 }
-.style-content img {
-	width: 100%;
+@media (max-width: 412px) {
+	.style-content img {
+		width: 100%;
+	}
 }
 .style .style-text {
 	font-size: 18px;
